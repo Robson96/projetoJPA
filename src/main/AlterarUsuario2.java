@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class alterarUsuario2 {
+public class AlterarUsuario2 {
     public static void main(String[] args) {
         /**
          * Todo obj que estiver no contexto gerenciavel vai ser secronizado
@@ -41,7 +41,8 @@ public class alterarUsuario2 {
 
         usuario.setNome("Joao batista");
 
-        //em.merge(usuario);
+        //Entao para retorna o obj para ser gerenciavel, passando para o metodo merge()
+        em.merge(usuario);
 
         em.getTransaction().commit();
 

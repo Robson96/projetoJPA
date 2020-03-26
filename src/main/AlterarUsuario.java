@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class alterarUsuario {
+public class AlterarUsuario {
     public static void main(String[] args) {
         /**
          * Todo obj que estiver no contexto gerenciavel vai ser secronizado
